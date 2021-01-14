@@ -1,11 +1,11 @@
-const ethers = require('ethers');
-const abi = require('./abi');
+import * as ethers from 'ethers';
+import {AUCTION_ABI} from './abi';
 
 const provider = ethers.getDefaultProvider('kovan', process.env.INFURA_KEY);
-const signer = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
+const signer = new ethers.Wallet(process.env.PRIVATE_KEY || '', provider);
 
 const end = async () => {
-  const contract = new ethers.Contract('0x044Bc5A48B8daBc2197eA33b5076572275E7aCCd', abi.AUCTION_ABI, signer);
+  const contract = new ethers.Contract('0x044Bc5A48B8daBc2197eA33b5076572275E7aCCd', AUCTION_ABI, signer);
 
   const overrides = {
     gasLimit: 1000000,

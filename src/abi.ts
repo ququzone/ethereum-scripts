@@ -1,4 +1,4 @@
-const AUCTION_ABI = [
+export const AUCTION_ABI = [
   {
     "anonymous": false,
     "inputs": [
@@ -706,7 +706,3 @@ const AUCTION_ABI = [
     "type": "function"
   }
 ];
-
-module.exports = {
-  AUCTION_ABI
-};
