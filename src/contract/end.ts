@@ -28,6 +28,6 @@ const end = async () => {
     overrides
   );
   console.log(tx);
-}
+};
 
 end();
