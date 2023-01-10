@@ -2,7 +2,8 @@ import * as ethers from 'ethers';
 import {ERC20_ABI} from '../contract/abi';
 
 const provider = new ethers.providers.WebSocketProvider(
-  'wss://babel-api.mainnet.iotex.io/'
+  // 'wss://babel-api.mainnet.iotex.io/'
+  'wss://babel-api.testnet.iotex.one'
 );
 
 const main = async () => {
