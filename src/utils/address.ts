@@ -36,6 +36,7 @@ const y_sum_s = [
   41,
 ];
 
+console.log(Buffer.from(y_sum_s).toString('hex'));
 console.log(
   'address: ',
   ethers.utils.computeAddress('0x' + Buffer.from(y_sum_s).toString('hex'))
