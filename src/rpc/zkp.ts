@@ -18,7 +18,7 @@ const main = async () => {
 
   const verify = await signer.call({
     to: contract,
-    data: '0x',
+    data: data.calldata,
   });
   console.log(`verify result: ${verify}`);
 };
